@@ -76,7 +76,7 @@ export function DashboardNavbar() {
 
       console.log(query);
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${query}`,
+        `https://pg-dissertation-management.onrender.com/api/user?search=${query}`,
         config
       );
 

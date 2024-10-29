@@ -26,7 +26,7 @@ const FileUploadComponent = ({addUrlToChatPdf}) => {
   
       console.log(query);
       const { data } = await axios.get(
-        `http://localhost:5000/api/thesis/allment?search=${query}`,
+        `https://pg-dissertation-management.onrender.com/api/thesis/allment?search=${query}`,
         config
       );
   

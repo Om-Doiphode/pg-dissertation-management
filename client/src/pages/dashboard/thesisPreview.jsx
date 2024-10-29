@@ -50,7 +50,7 @@ function ThesisPreview() {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/api/thesis/feedback", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/thesis/feedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

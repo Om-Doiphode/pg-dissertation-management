@@ -59,7 +59,7 @@ export function MentorView() {
     console.log(body);
 
     console.log("Before sending post request");
-    const res = await fetch("http://localhost:5000/api/mentor/", {
+    const res = await fetch("https://pg-dissertation-management.onrender.com/api/mentor/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +78,7 @@ export function MentorView() {
 
   const getStudents = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/mentor", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/mentor", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

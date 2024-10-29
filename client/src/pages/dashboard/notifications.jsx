@@ -38,7 +38,7 @@ export function Notifications() {
         endpoint = "getfeedback";
       }
 
-      const res = await fetch(`http://localhost:5000/api/thesis/${endpoint}`, {
+      const res = await fetch(`https://pg-dissertation-management.onrender.com/api/thesis/${endpoint}`, {
         headers: {
           Authorization: `Bearer ${user?.token}`,
         },

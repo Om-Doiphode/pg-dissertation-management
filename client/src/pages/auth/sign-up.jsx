@@ -124,7 +124,7 @@ export function SignUp() {
 
     try {
       console.log("About to send request");
-      const res = await fetch("http://localhost:5000/api/user", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/user", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({

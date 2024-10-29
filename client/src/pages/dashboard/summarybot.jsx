@@ -198,7 +198,7 @@ function Summary() {
       const body = { data: result };
 
       console.log("About to send request");
-      const res = await fetch("http://localhost:5000/api/thesis/download", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/thesis/download", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

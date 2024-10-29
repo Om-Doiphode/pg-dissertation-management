@@ -48,7 +48,7 @@ const MentorMonitor = () => {
   const getGoals = async () => {
     console.log("Inside the get goals route");
     try {
-      const res = await fetch("http://localhost:5000/api/mentor/goals", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/mentor/goals", {
         method: "GET",
         headers: {
           "Content-type": "application/json",
@@ -100,7 +100,7 @@ const MentorMonitor = () => {
     console.log(body);
 
     console.log("Before sending post request");
-    const res = await fetch("http://localhost:5000/api/mentor/", {
+    const res = await fetch("https://pg-dissertation-management.onrender.com/api/mentor/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -157,7 +157,7 @@ const MentorMonitor = () => {
     const body = { task, newTitle, id, date, time };
 
     try {
-      const res = await fetch("http://localhost:5000/api/mentor/", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/mentor/", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -206,7 +206,7 @@ const MentorMonitor = () => {
 
     try {
       console.log("About to send a delete request");
-      const res = await fetch("http://localhost:5000/api/mentor", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/mentor", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

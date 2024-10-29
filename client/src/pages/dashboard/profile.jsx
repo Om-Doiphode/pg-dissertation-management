@@ -41,7 +41,7 @@ export function Profile() {
 
   const fetchThesis = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/thesis/", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/thesis/", {
         methods: "GET",
         headers: {
           Authorization: `Bearer ${user?.token}`,

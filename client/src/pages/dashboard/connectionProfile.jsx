@@ -47,7 +47,7 @@ export function ConnectionProfile() {
 
   const fetchThesis = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/thesis/", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/thesis/", {
         methods: "GET",
         headers: {
           Authorization: `Bearer ${user?.token}`,
@@ -78,7 +78,7 @@ export function ConnectionProfile() {
     const body = { from: user?._id, to: connection?._id };
 
     try {
-      const res = await fetch("http://localhost:5000/api/connections/", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/connections/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -102,7 +102,7 @@ export function ConnectionProfile() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/connections/", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/connections/", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${user.token}`,

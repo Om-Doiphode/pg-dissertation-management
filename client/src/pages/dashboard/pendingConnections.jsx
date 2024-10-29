@@ -24,7 +24,7 @@ export function PendingConnections() {
       console.log("The id is ", id);
       const body = { id: id };
 
-      const res = await fetch("http://localhost:5000/api/connections/accept", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/connections/accept", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -54,7 +54,7 @@ export function PendingConnections() {
       console.log("The id is ", id);
       const body = { id: id };
 
-      const res = await fetch("http://localhost:5000/api/connections/reject", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/connections/reject", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -80,7 +80,7 @@ export function PendingConnections() {
 
   const getConnections = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/connections/pending", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/connections/pending", {
         headers: {
           Authorization: `Bearer ${user?.token}`,
         },

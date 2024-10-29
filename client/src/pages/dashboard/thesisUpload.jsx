@@ -77,7 +77,7 @@ function ThesisUpload() {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/thesis/allment?search=${query}`,
+        `https://pg-dissertation-management.onrender.com/api/thesis/allment?search=${query}`,
         config
       );
 
@@ -106,7 +106,7 @@ function ThesisUpload() {
     setLoading(true);
     try {
       console.log("About to send request");
-      const res = await fetch("http://localhost:5000/api/thesis/submitThesis", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/thesis/submitThesis", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

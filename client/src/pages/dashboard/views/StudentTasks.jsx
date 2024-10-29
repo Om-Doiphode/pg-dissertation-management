@@ -65,7 +65,7 @@ const StudentTasks = () => {
 
   const getGoals = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/dashboard/goals", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/dashboard/goals", {
         method: "GET",
         headers: {
           "Content-type": "application/json",
@@ -119,7 +119,7 @@ const StudentTasks = () => {
     console.log(body);
 
     console.log("Before sending post request");
-    const res = await fetch("http://localhost:5000/api/dashboard/goals", {
+    const res = await fetch("https://pg-dissertation-management.onrender.com/api/dashboard/goals", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -170,7 +170,7 @@ const StudentTasks = () => {
     newTask.deadline = `2023-02-${num}`;
 
     try {
-      const res = await fetch("http://localhost:5000/api/dashboard/goals", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/dashboard/goals", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -223,7 +223,7 @@ const StudentTasks = () => {
     const body = { task, newTitle, date, time };
 
     try {
-      const res = await fetch("http://localhost:5000/api/dashboard/goals", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/dashboard/goals", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -263,7 +263,7 @@ const StudentTasks = () => {
     const completed = task.isCompleted;
     try {
       console.log("ABOUT TO SEND A PATCH REQUEST");
-      const res = await fetch("http://localhost:5000/api/dashboard/goals", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/dashboard/goals", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -332,7 +332,7 @@ const StudentTasks = () => {
 
     try {
       console.log("About to send a delete request");
-      const res = await fetch("http://localhost:5000/api/dashboard/goals", {
+      const res = await fetch("https://pg-dissertation-management.onrender.com/api/dashboard/goals", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
