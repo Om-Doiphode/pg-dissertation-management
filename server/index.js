@@ -17,7 +17,7 @@ const { default: mongoose } = require("mongoose");
 // const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 // const File = require("./models/fileModal");
 mongoose
-  .connect("mongodb://127.0.0.1:27017/dissertationHub")
+  .connect("mongodb+srv://Hostel:2268CAPTAIN@cluster0.voabydv.mongodb.net/pgDissertation?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("Connected to MONGODB successfully");
   })
